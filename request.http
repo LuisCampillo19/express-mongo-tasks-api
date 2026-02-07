@@ -1,0 +1,24 @@
+GET http://localhost:3001/tasks
+
+###s
+POST http://localhost:3001/tasks
+Content-Type: application/json
+
+{
+    "title": "Investigate memory leak",
+    "content": "The server consumes excessive RAM after running for 24 hours; need to profile the Node.js process"
+}
+###
+DELETE http://localhost:3001/tasks/698774fe3a22c9b2fff73424
+
+###
+GET http://localhost:3001/tasks/698777ab3a22c9b2fff73434
+
+###
+PUT http://localhost:3001/tasks/698777ab3a22c9b2fff73434
+Content-Type: application/json
+
+{
+    "title": "Setup CI/CD Pipeline - update",
+    "content": "Configure GitHub Actions to automatically run unit tests on every push - update"
+}
