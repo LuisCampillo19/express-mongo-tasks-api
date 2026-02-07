@@ -5,7 +5,7 @@ import mongoose from 'mongoose'
 dotenv.config() 
 
 const app = express()
-//Midleware
+//Middleware
 app.use(express.json())
 app.use('/tasks', router)
 
