@@ -8,7 +8,7 @@ export const getTaskById = async (id) => {
     return await Task.findById(id);
 };
 
-export const createTask = async () =>{
+export const createTask = async (taskData) =>{
     const newTask = new Task(taskData);
     return await newTask.save();
 };

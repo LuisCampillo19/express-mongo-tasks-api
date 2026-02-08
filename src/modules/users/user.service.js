@@ -1,4 +1,3 @@
-import { Activity } from 'react';
 import User from './user.model.js';
 
 export const getAllUsers = async (req, res) =>{
